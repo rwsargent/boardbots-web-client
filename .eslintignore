@@ -10,3 +10,6 @@ coverage/*
 /src/types/
 #webpack config files
 webpack.config.js
+
+#generated protobufs
+src/pb/
