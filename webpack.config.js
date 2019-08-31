@@ -6,7 +6,8 @@ const shouldWatch = (process.argv[2] || false) === "-w";
 
 module.exports = {
     entry: {
-        game: "./src/public/js/game.ts"
+        game: "./src/public/js/game.ts",
+        auth: "./src/public/js/auth.ts"
     },
     devtool: 'inline-source-map',
     output: {

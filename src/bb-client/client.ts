@@ -1,8 +1,8 @@
 // @ts-ignore
 import {BoardbotsServiceClient} from "../pb/boardbots_grpc_pb";
 import grpc, {Client} from "grpc";
-
 let instance: Client;
+
 
 function newClient(): Client {
     if (process.env["NODE_ENV"] === "development") {
@@ -17,6 +17,5 @@ export function getClient(): Client {
     if(typeof instance === "undefined") {
         instance = newClient();
     }
-
     return instance;
 }
