@@ -17,7 +17,7 @@
     "watch-sass": "node-sass -w src/public/css/main.sass dist/public/css/main.css",
     "copy-static-assets": "ts-node copy-static-assets.ts",
     "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/server.js",
+    "serve-debug": "nodemon --inspect dist/www.js",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Webpack,Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,purple.bold,green.bold\" \"npm run watch-pack\" \"npm run watch-sass\" \"sleep 3 && npm run watch-ts\" \"npm run serve-debug\""
   },
   "dependencies": {
